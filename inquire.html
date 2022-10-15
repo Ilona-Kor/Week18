@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty-Qs</title>
+    <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/2229/premium/2229675.png?token=exp=1654193718~hmac=79c1578b49057fc16f6fad3d8860d3cc" type="image/png">
+    <style>
+        input:required:valid {
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Опросник для вашего питомца 😺</h2>
+    <fieldset>
+        <legend>Имя</legend>
+        <div>
+            <label for="pet_name">Кличка питомца</label>
+            <input type="text" id="pet_name" required/>
+        </div>
+        <div>
+            <label for="name">Имя владельца</label>
+            <input type="text" id="name" required/>
+        </div>
+        <div>
+            <label for="contacts">Контакты владельца</label>
+            <input type="text" id="contacts" required/>
+        </div> 
+    </fieldset>
+    <section>
+        <h4>Порода питомца</h4>
+        <select>
+            <option value="Британец">Британская короткошерстная</option>
+            <option value="Дворняжка">Дворняжка</option>
+            <option value="Мейн-кун">Мейн-кун </option>
+            <option value="Петерболд">Петерболд</option>
+            <option value="Сиамская">Сиамская кошка</option>
+            <option value="Сфинкс">Сфинкс</option>
+            <option value="Шотландец">Шотландская вислоухая</option>
+        </select>
+    </section>
+    <section>
+        <h4>Тип корма</h4>
+        <input type="checkbox" id="fodder">
+        <label for="fodder">Сухой корм</label>
+    </section>
+    <section>
+        <input type="checkbox" id="feed">
+        <label for="feed">Влажный корм</label>
+    </section>
+    <section>
+        <input type="checkbox" id="feed_1">
+        <label for="feed_1">Натуральный корм </label>
+    </section>
+    <section>
+        <h4>Пол питомца</h4> 
+        <label for="sex"> Укажите пол вашего питомца</label><br>
+        Самка <input type="radio" name="sex" id="sex"> <br> Самец <input type="radio" name="sex" id="sex_male">
+    </section>
+    <section>
+        <h4>Комментарии</h4>
+        <textarea rows="10"></textarea>
+    </section>
+    <section>
+        <label for="pic">Можете добавить фотографию питомца</label>
+        <input type="file" id="pic" required>
+    </section>
+    <div><input type="button" value="Сохранить"></div>
+</body>
+</html>

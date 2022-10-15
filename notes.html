@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+            <form class="container-content__form" action="#" novalidate>
+                <h1 class="container-content__name">
+                    Notes
+                </h1>
+                <div class="container-content__greeting">
+                    Hello, <input class="input-box__greeting" id="name" type="text" placeholder="what's your name?" required/> !
+                </div>
+                <div class="container-content__input-box">
+                    <input class="input-box" id="line-1" type="text" placeholder="Make a note!" required/>
+                </div>
+                <div class="container-content__input-box">
+                    <input class="input-box" id="line-2" type="text" placeholder="Make a note!" required/>
+                </div>
+                <div class="container-content__input-box">
+                    <input class="input-box" id="line-3" type="text" placeholder="Make a note!" required/>
+                </div>
+                <div class="container-content__input-box">
+                    <input class="input-box" id="line-4" type="text" placeholder="Make a note!" required/>
+                </div>
+                <div class="container-content__input-box">
+                    <input class="input-box" id="line-5" type="text" placeholder="Make a note!" required/>
+                </div>
+                <div class="container-content__input-box">
+                    <input class="input-box" id="line-6" type="text" placeholder="Make a note!" required/>
+                </div>
+                <div class="container-content__input-box input-box-textarea">
+                    <h4>Additional info:</h4>
+                    <textarea class="message-box" id="extra info"></textarea>
+                </div>
+                <button class="container-content__input-box input-box-button" type="button" id="button-save">save notes</button>
+                <div id="errorsInfo"></div>
+            </form>
+        </div>
+    </div>
+    <script src="notes.js"></script>
+</body>
+</html>

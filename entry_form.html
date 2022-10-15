@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="entry_form.css">
+    <style>
+        input:required:valid {
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-content">
+        <form class="container-content__form" action="#" novalidate>
+            <h1 class="container-content__name">
+                Регистрация
+            </h1>
+            <div class="container-content__input-box">
+                <input class="input-box" id="login" type="text" placeholder="Логин" required/>
+            </div>
+            <div class="container-content__input-box">
+                <input class="input-box" id="password" type="text" placeholder="Пароль" required/>
+            </div>
+            <div class="container-content__input-box input-box-3">
+                <input class="input-box" id="email" type="email" placeholder="E-mail*" required/>
+            </div>
+            <div class="container-content__input-box input-box-4">
+                <input class="input-box" id="phone number" type="text" placeholder="Номер телефона*" required/>
+            </div>
+            <div class="container-content__input-box input-box-textarea">
+                <textarea class="message-box" id="about me" placeholder="Обо мне"></textarea>
+            </div>
+            <input type="checkbox" class="container-content__confirmation">
+            <label for="checkbox" class="container-content__confirmation1">Создавая аккаунт, Вы соглашаетесь
+                с политикой <br> конфиденциальности</label> 
+            <form action="/form_success.html">
+                <div id="error"></div>
+            <button class="container-content__input-box input-box-button" type="button" id="registrate">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </form>
+        <div id="errorsInfo"></div>
+        </form>
+    </div>
+    <script src="entry_form.js"></script>
+</body>
+</html>
